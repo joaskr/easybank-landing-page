@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #fafafa;
+  font-family: "Public Sans", sans-serif;
+}
+header {
+  background-color: #fafafa;
+  height: 64px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  display: none;
+}
+.banner {
+  height: 280px;
+  background-image: url(./images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -2;
+}
+.banner-image {
+  width: 325px;
+  position: absolute;
+  right: 25px;
+  bottom: -17px;
+  z-index: -1;
+}
+main {
+  margin: 0 24px;
+}
+.title-section {
+  margin-top: 40px;
+  margin-bottom: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title-section h1 {
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+  color: #2d314d;
+  margin-bottom: 5px;
+}
+.title-section p {
+  font-size: 15px;
+  text-align: center;
+  color: #9597a5;
+}
+.title-section button {
+  padding: 13px 38px;
+  margin-top: 32px;
+  border-radius: 22px;
+  font-size: 14px;
+  color: #fff;
+  background: rgb(51, 211, 94);
+  background: -moz-linear-gradient(
+    94deg,
+    rgba(51, 211, 94, 1) 0%,
+    rgba(42, 182, 217, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    94deg,
+    rgba(51, 211, 94, 1) 0%,
+    rgba(42, 182, 217, 1) 100%
+  );
+  background: linear-gradient(
+    94deg,
+    rgba(51, 211, 94, 1) 0%,
+    rgba(42, 182, 217, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33d35e",endColorstr="#2ab6d9",GradientType=1);
+  border: none;
+}

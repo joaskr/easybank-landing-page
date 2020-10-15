@@ -30,8 +30,9 @@ nav {
 .banner-image {
   width: 325px;
   position: absolute;
-  right: 25px;
-  bottom: -17px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: -1;
 }
 

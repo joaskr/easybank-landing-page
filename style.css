@@ -14,9 +14,41 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+.menu-button {
+  border: none;
 }
 nav {
   display: none;
+}
+.is-active {
+  width: 327px;
+  height: 265px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 140%;
+  font-size: 18px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 300px 68px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 0px 300px 68px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px 300px 68px rgba(0, 0, 0, 0.9);
+}
+nav ul {
+  height: 204px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  text-align: center;
+  /* margin-bottom: 21px; */
 }
 .banner {
   height: 280px;
@@ -216,4 +248,17 @@ footer p {
 }
 .attribution a:hover {
   color: #fff;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
 }

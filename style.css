@@ -18,6 +18,8 @@ header {
 }
 .menu-button {
   border: none;
+  background: #fafafa;
+  cursor: pointer;
 }
 nav {
   display: none;
@@ -34,8 +36,8 @@ nav {
   top: 140%;
   font-size: 18px;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 0px 300px 68px rgba(0, 0, 0, 0.9);
-  -moz-box-shadow: 0px 0px 300px 68px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0px 0px 300px 100px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 0px 300px 100px rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px 300px 68px rgba(0, 0, 0, 0.9);
 }
 nav ul {
@@ -48,13 +50,12 @@ nav ul {
 nav ul li {
   list-style: none;
   text-align: center;
-  /* margin-bottom: 21px; */
 }
 .banner {
   height: 280px;
   background-image: url(./images/bg-intro-mobile.svg);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% 120%;
   background-position: top right;
   position: relative;
   z-index: -2;
@@ -87,8 +88,10 @@ p {
   font-size: 15px;
   text-align: center;
   color: #9597a5;
+  line-height: 25px;
 }
-.title-section button {
+.button {
+  cursor: pointer;
   padding: 13px 38px;
   margin-top: 32px;
   border-radius: 22px;
@@ -110,7 +113,6 @@ p {
     rgba(51, 211, 94, 1) 0%,
     rgba(42, 182, 217, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33d35e",endColorstr="#2ab6d9",GradientType=1);
   border: none;
 }
 .advantages-section {
@@ -181,10 +183,13 @@ h3 {
   color: #9597a5;
   margin-bottom: 8px;
 }
-h4 {
+.article-header {
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 7px;
+}
+.article-header:hover {
+  color: rgb(51, 211, 94);
 }
 .article p {
   font-size: 13px;
@@ -198,6 +203,9 @@ footer {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+}
+.footer-logo {
+  padding: 20px;
 }
 .footer-social {
   width: 184px;
@@ -214,29 +222,8 @@ footer ul li {
   margin: 8px 0;
   padding-bottom: 5px;
 }
-footer button {
-  padding: 13px 38px;
-  border-radius: 22px;
-  font-size: 14px;
-  color: #fff;
-  background: rgb(51, 211, 94);
-  background: -moz-linear-gradient(
-    94deg,
-    rgba(51, 211, 94, 1) 0%,
-    rgba(42, 182, 217, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    94deg,
-    rgba(51, 211, 94, 1) 0%,
-    rgba(42, 182, 217, 1) 100%
-  );
-  background: linear-gradient(
-    94deg,
-    rgba(51, 211, 94, 1) 0%,
-    rgba(42, 182, 217, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#33d35e",endColorstr="#2ab6d9",GradientType=1);
-  border: none;
+footer ul li:hover {
+  color: rgb(51, 211, 94);
 }
 footer p {
   width: 230px;
@@ -244,14 +231,16 @@ footer p {
 }
 .attribution a {
   text-decoration: none;
-  color: #9597a5;
+  color: rgb(51, 211, 94);
+  cursor: pointer;
 }
 .attribution a:hover {
-  color: #fff;
+  color: rgba(42, 182, 217, 1);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (min-width: 600px) {...} */
+@media only screen and (min-width: 600px) {
+}
 
 /* Medium devices (landscape tablets, 768px and up) */
 /* @media only screen and (min-width: 768px) {...} */

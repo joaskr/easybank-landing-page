@@ -393,9 +393,19 @@ footer a {
   .desktop-menu ul li {
     padding: 2rem 0;
     border-bottom: 4px solid transparent;
+    color: var(--light-grayish-blue);
+    font-weight: 300;
+    font-size: 0.875rem;
   }
 
-  .desktop-menu ul li:hover {
+  .desktop-menu ul li a {
+    color: var(--grayish-blue);
+    font-weight: 300;
+    font-size: 0.875rem;
+  }
+
+  .desktop-menu ul li a:hover {
+    color: var(--lime-green);
     padding: 2rem 0;
     border-bottom: 4px solid var(--lime-green);
   }

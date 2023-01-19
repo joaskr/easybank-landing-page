@@ -1,3 +1,13 @@
+:root {
+  --dark-blue: hsl(233, 26%, 24%);
+  --lime-green: hsl(136, 65%, 51%);
+  --bright-cyan: hsl(192, 70%, 51%);
+  --grayish-blue: hsl(233, 8%, 62%);
+  --light-grayish-blue: hsl(220, 16%, 96%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +33,7 @@ h2 {
   font-size: 1.875rem;
   font-weight: 300;
   text-align: center;
-  color: #2d314d;
+  color: var(--dark-blue);
   margin-bottom: 2.5rem;
 }
 
@@ -31,28 +41,28 @@ h3 {
   font-size: 1.25rem;
   font-weight: 300;
   text-align: center;
-  color: #2d314d;
+  color: var(--dark-blue);
   margin-bottom: 1.063rem;
 }
 
 a {
   text-decoration: none;
-  color: #2d314d;
+  color: var(--dark-blue);
 }
 
 a:hover {
-  color: rgb(51, 211, 94);
+  color: var(--lime-green);
 }
 
 .active {
   font-weight: 600;
-  color: rgb(51, 211, 94);
+  color: var(--lime-green);
 }
 
 p {
   font-size: 0.938rem;
   text-align: center;
-  color: #9597a5;
+  color: var(--grayish-blue);
   line-height: 1.563rem;
 }
 
@@ -62,29 +72,29 @@ p {
   margin-top: 2rem;
   border-radius: 22px;
   font-size: 0.875rem;
-  color: #fff;
-  background: rgb(51, 211, 94);
+  color: var(--white);
+  background: var(--lime-green);
   background: -moz-linear-gradient(
     94deg,
-    rgba(51, 211, 94, 1) 0%,
-    rgba(42, 182, 217, 1) 100%
+    var(--lime-green) 0%,
+    var(--bright-cyan) 100%
   );
   background: -webkit-linear-gradient(
     94deg,
-    rgba(51, 211, 94, 1) 0%,
-    rgba(42, 182, 217, 1) 100%
+    var(--lime-green) 0%,
+    var(--bright-cyan) 100%
   );
   background: linear-gradient(
     94deg,
-    rgba(51, 211, 94, 1) 0%,
-    rgba(42, 182, 217, 1) 100%
+    var(--lime-green) 0%,
+    var(--bright-cyan) 100%
   );
   border: none;
 }
 
 .menu-button {
   border: none;
-  background: #fafafa;
+  background: var(--white);
   cursor: pointer;
 }
 
@@ -95,7 +105,7 @@ nav {
 .is-active {
   width: 327px;
   height: 265px;
-  background-color: #fff;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,9 +115,9 @@ nav {
   left: calc((100vw - 327px) / 2);
   font-size: 1.125rem;
   border-radius: 5px;
-  -webkit-box-shadow: 0px 70px 100px 50p rgba(45, 49, 77, 1);
-  -moz-box-shadow: 0px 70px 100px 50p rgba(45, 49, 77, 1);
-  box-shadow: 0px 70px 100px 50px rgba(45, 49, 77, 1);
+  -webkit-box-shadow: 0px 70px 100px 50p var(--dark-blue);
+  -moz-box-shadow: 0px 70px 100px 50p var(--dark-blue);
+  box-shadow: 0px 70px 100px 50px var(--dark-blue);
 }
 
 nav ul {
@@ -155,12 +165,12 @@ nav ul li {
   font-size: 2.5rem;
   font-weight: 300;
   text-align: center;
-  color: #2d314d;
+  color: var(--dark-blue);
   margin-bottom: 0.313rem;
 }
 
 .advantages-section {
-  background-color: #f4f5f7;
+  background-color: var(--light-grayish-blue);
   margin-bottom: 5.5rem;
   padding: 4rem 0 3rem 0;
 }
@@ -208,7 +218,7 @@ nav ul li {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: #ffffff;
+  background-color: var(--white);
   margin-bottom: 1.5rem;
 }
 
@@ -226,7 +236,7 @@ nav ul li {
 
 .author {
   font-size: 0.625rem;
-  color: #9597a5;
+  color: var(--grayish-blue);
   margin-bottom: 0.5rem;
 }
 
@@ -237,7 +247,7 @@ nav ul li {
 }
 
 .article-header:hover {
-  color: rgb(51, 211, 94);
+  color: var(--lime-green);
 }
 
 .article p {
@@ -246,8 +256,8 @@ nav ul li {
 }
 
 footer {
-  background-color: #2d314d;
-  color: #fff;
+  background-color: var(--dark-blue);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -275,7 +285,7 @@ footer ul li {
 }
 
 footer ul li:hover {
-  color: rgb(51, 211, 94);
+  color: var(--lime-green);
 }
 
 footer p {
@@ -288,17 +298,17 @@ footer button {
 }
 
 footer a {
-  color: #ffffff;
+  color: var(--white);
 }
 
 .attribution a {
   text-decoration: none;
-  color: rgb(51, 211, 94);
+  color: var(--lime-green);
   cursor: pointer;
 }
 
 .attribution a:hover {
-  color: rgba(42, 182, 217, 1);
+  color: var(--bright-cyan);
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
